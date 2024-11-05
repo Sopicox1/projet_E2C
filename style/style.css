@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "custom";
+    src: url(./Rocklime.otf);
+}
+body {
+    color:rgb(250, 249, 249);
+    font-size: 1.5rem;
+    font-family: custom, sans-serif;
+    background-color: rgb(0, 0, 0);
+
+}
+
+header {
+    color: blue;
+    background-color: rgb(255, 255, 255);
+}
