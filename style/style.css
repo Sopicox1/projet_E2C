@@ -13,7 +13,7 @@ body {
     color:rgb(0, 0, 0);
     font-size: 1.5rem;
     font-family: custom, sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
 
 }
 
@@ -27,6 +27,14 @@ header {
     height: 20vh;
     padding: 15px;
     margin-bottom: 20px;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+}
+
+main {
+    position: relative;
+    top: 20vh;
 }
 
 h1,h2 {
@@ -69,7 +77,52 @@ ul {
 }
 
 #imagedecon {
-    width: 100vW;
-    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    aspect-ratio: 1904/640;
+    width: 100vw;
     background-image: url(../asset/library.png);
+    background-repeat: no-repeat;
+    background-size: 100%;  
+    background-attachment: fixed;
+    background-position-y: 15vh;
+}
+
+#imagedecon>h2 {
+    font-size: 5rem;
+    padding-right: 5vw;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 78vh;
+    width: 40vh;
+    background-color: #550707;
+    position: fixed;
+    top: 21vh;
+    margin-left: 1vh;
+    z-index: 5;
+}
+
+.button {
+    display: block;
+    text-decoration: none;
+    width: 80%;
+    height: 5vh;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2.5vh;
+}
+.button:hover {
+    background-color: #550707;
+    color: #ffffff;
+    border: #fcfcfc 2px solid;
 }
